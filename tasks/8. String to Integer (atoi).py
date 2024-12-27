@@ -62,7 +62,6 @@ Step 3: "4193 with words" ("4193" is read in; reading stops because the next cha
 The parsed integer is 4193.
 Since 4193 is in the range [-231, 231 - 1], the final result is 4193.
 
-
 Constraints:
 
 0 <= s.length <= 200
