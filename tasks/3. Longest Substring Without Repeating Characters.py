@@ -47,3 +47,8 @@ class Solution:
             max_length = max(max_length, window_size)
 
         return max_length
+
+
+# Complexity Analysis
+# Time Complexity: O(N) because the right pointer iterates through the string exactly once. The left pointer only jumps forward and never backtracks.
+# Space Complexity: O(min(M,N) where m is the size of the alphabet/character set. The hash map stores at most all unique characters in the string.
