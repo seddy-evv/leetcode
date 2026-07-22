@@ -28,24 +28,22 @@ s consists of English letters, digits, symbols and spaces.
 
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
-        if len(s) == 1:
-            return 1
-        chrs = {}
-        result_str = ""
-        max = 0
-        for i in s:
-            count = chrs.get(i, 0)
-            if not count:
-                result_str += i
-                chrs[i] = 1
-                if max < len(result_str):
-                    max = len(result_str)
-            else:
-                result_str = (result_str + i)[result_str.index(i) + 1:]
-                if max < len(result_str):
-                    max = len(result_str)
-                chrs = {}
-                chrs = dict.fromkeys([*result_str], 1)
-        if max < len(result_str):
-            max = len(result_str)
-        return max
+        char_map = {}  # Stores the character and its last seen index
+        left = 0
+        max_length = 0
+
+        for right in range(len(s)):
+            current_char = s[right]
+
+            # If character is duplicated inside current window, jump left pointer
+            if current_char in char_map and char_map[current_char] >= left:
+                left = char_map[current_char] + 1
+
+            # Update last seen position of the character
+            char_map[current_char] = right
+
+            # Calculate current window size and update max
+            window_size = right - left + 1
+            max_length = max(max_length, window_size)
+
+        return max_length
