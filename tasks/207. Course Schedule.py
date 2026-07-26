@@ -66,3 +66,24 @@ if __name__ == "__main__":
     # # False
     # print(canFinish(4, [[1, 0], [2, 1]]))
     # # True
+
+
+# 1. Build the Graph
+    # - Represent the courses as a directed graph where an edge goes from prereq -> course.
+    # - Maintain an in_degree array to keep track of how many prerequisites each course has.
+# 2. Initialize the Queue
+    # - Find all courses that have an in_degree of 0.
+    # - These courses have no prerequisites and can be taken immediately.
+    # - Push these courses into a collections.deque queue.
+# 3. Process with BFS
+    # - Pop a course from the queue and increment the visited_courses counter.
+    # - Iterate through all of its dependent neighbor courses.
+    # - Decrement the in_degree of each neighbor by 1.
+    # - If a neighbor's in_degree drops to 0, add it to the queue.
+# 4. Verify the Result
+    # - Compare the visited_courses counter to the total numCourses.
+    # - If they are equal, a valid ordering exists.
+    # - If they are not equal, a cycle exists, making it impossible to complete all courses.
+# Complexity Analysis:
+# Time Complexity: O(V + E) where V is numCourses and E is the number of prerequisites. Every node and edge is processed exactly once.
+# Space Complexity: O(V + E) to store the adjacency list representation of the graph and the tracking arrays
