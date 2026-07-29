@@ -27,5 +27,5 @@ if __name__ == "__main__":
     print(sortColors([2, 0, 2, 1, 1, 0]))
     # [0, 0, 1, 1, 2, 2]
 
-Time: O(N) (single pass).
-Space: O(1) (in-place).
+# Time: O(N) (single pass).
+# Space: O(1) (in-place).
