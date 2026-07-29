@@ -62,9 +62,9 @@ def canFinish(numCourses: int, prerequisites: list[list[int]]) -> bool:
 if __name__ == "__main__":
     print(canFinish(2, [[1, 0]]))
     # True
-    # print(canFinish(2, [[1, 0], [0, 1]]))
+    print(canFinish(2, [[1, 0], [0, 1]]))
     # # False
-    # print(canFinish(4, [[1, 0], [2, 1]]))
+    print(canFinish(4, [[1, 0], [2, 1]]))
     # # True
 
 
