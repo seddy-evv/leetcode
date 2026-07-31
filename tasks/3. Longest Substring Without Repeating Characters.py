@@ -51,6 +51,13 @@ class Solution:
         return max_length
 
 
+if __name__ == "__main__":
+    sol = Solution()
+    s = "abcabcbb"
+    print(sol.lengthOfLongestSubstring(s))
+    # 3
+
+    
 # Complexity Analysis
 # Time Complexity: O(N) because the right pointer iterates through the string exactly once. 
 # The left pointer only jumps forward and never backtracks.
