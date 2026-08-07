@@ -15,7 +15,7 @@
 # Output: -1
 
 
-# Sliding Window (Two Pointers / Two-Pointer Approach)
+# Dijkstra's Algorithm (Using a Priority Queue / Min-Heap)
 import heapq
 from collections import defaultdict
 
