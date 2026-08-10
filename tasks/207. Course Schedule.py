@@ -26,7 +26,7 @@
 # All the pairs prerequisites[i] are unique.
 
 
-# The solution using Kahn's Algorithm (Breadth-First Search / Topological Sort):
+# The solution using Kahn's Algorithm (Breadth-First Search / Topological Sort) Graph problem:
 
 
 from collections import deque
