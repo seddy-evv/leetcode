@@ -1,61 +1,57 @@
-# Task description:
-# You are given a 2D string array scores where each element is a pair [student_name, score]. A student can have
-# multiple scores from different subjects.
-# Find the maximum average score achieved by any student. If the average result is a decimal, calculate the floor
-# value (nearest lower integer).
-
-# Example:
-# Input: scores = [["Bob", "87"], ["Mike", "35"], ["Bob", "52"], ["Jason", "35"], ["Mike", "99"]]
-# Output: 69
+# Given a list of scores of different students, items, where items[i] = [IDi, scorei] represents that the student
+# with IDi got scorei in an exam.
+# Find the average of the top five highest scores for each student. Return the answer as a list of pairs
+# [IDi, topFiveAverage], where topFiveAverage is rounded down using integer division. The output should be sorted by
+# IDi in ascending order.
+# Example 1:
+# Input: items = [[1,91],[1,92],[2,93],[2,97],[1,60],[2,77],[1,65],[1,87],[1,100],[2,100],[2,76]]
+# Output: [[1,87],[2,88]]
 # Explanation:
-# Bob's average: (87 + 52) / 2 = 69.5 -> 69.
-# Mike's average: (35 + 99) / 2 = 67.
-# Jason's average: 35 / 1 = 35.
-# The maximum of these averages is 69.
+#   Student 1's scores are [91, 92, 60, 65, 87, 100]. Their top 5 scores are [100, 92, 91, 87, 65]. The average is
+#   (100 + 92 + 91 + 87 + 65) // 5 = 435 // 5 = 87.
+#   Student 2's scores are [93, 97, 77, 100, 76]. Since they only have 5 scores, we take all of them. The average
+#   is (100 + 97 + 93 + 77 + 76) // 5 = 443 // 5 = 88.
 
 
-# Hash Map Aggregation with Fractional Tracking.
-import math
+# Min-Heap with Grouped HashMap Mapping
+import heapq
 from collections import defaultdict
 
 
 class Solution:
-    def highestAverageScore(self, scores: list[list[str]]) -> int:
-        if not scores:
-            return 0
+    def highFive(self, items: list[list[int]]) -> list[list[int]]:
+        # Map student ID to a min-heap tracking their top 5 scores
+        student_scores = defaultdict(list)
 
-        # Hash map to store: student_name -> [total_sum, count_of_subjects]
-        student_data = defaultdict(lambda: [0, 0])
+        for student_id, score in items:
+            heapq.heappush(student_scores[student_id], score)
 
-        # Step 1: Aggregate totals and counts for each student
-        for name, score_str in scores:
-            score = int(score_str)
-            student_data[name][0] += score  # Add to total sum
-            student_data[name][1] += 1  # Increment subject count
+            # If we exceed 5 scores, evict the smallest score
+            if len(student_scores[student_id]) > 5:
+                heapq.heappop(student_scores[student_id])
 
-        max_avg = -float('inf')
+        result = []
 
-        # Step 2: Compute floor average for each student and find the maximum
-        for name, (total_sum, count) in student_data.items():
-            # Use math.floor() to round down to the nearest integer
-            current_avg = math.floor(total_sum / count)
-            if current_avg > max_avg:
-                max_avg = current_avg
+        # Sort by student ID to fulfill the ascending requirement
+        for student_id in sorted(student_scores.keys()):
+            # The heap contains exactly the top 5 scores
+            top_5_sum = sum(student_scores[student_id])
+            average = top_5_sum // 5  # Integer division rounding down
+            result.append([student_id, average])
 
-        return max_avg
+        return result
 
 
-# --- Example Usage ---
 if __name__ == "__main__":
+
     sol = Solution()
-    test_scores = [["Bob", "87"], ["Mike", "35"], ["Bob", "52"], ["Jason", "35"], ["Mike", "99"]]
-    print(sol.highestAverageScore(test_scores))
-    # Output: 69
+    items = [[1, 91], [1, 92], [2, 93], [2, 97], [1, 60], [2, 77], [1, 65], [1, 87], [1, 100], [2, 100], [2, 76]]
+    print(sol.highFive(items))
+    # [[1, 87], [2, 88]]
 
 
 # Complexity Analysis:
-# Time Complexity: O(N), where N is the total number of entries in the scores array. We iterate
-# through the initial array once to build our hash map statistics and then scan the unique keys of the map to compute
-# averages.
-# Space Complexity: O(U) auxiliary space, where U is the number of unique student names. The hash
-# map stores one list record per unique student
+# Time Complexity: O(Nlog K + MlogM), where N is the total number of items, K is the max size of the heap
+# (which is capped at a constant 5, so log 5=O(1)), and M is the number of unique students sorted at the end.
+# This is practically a linear time operation O(N)
+# Space Complexity: O(M) auxiliary space to store up to 5 elements per unique student within our tracking map
