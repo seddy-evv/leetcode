@@ -21,6 +21,8 @@ s consist of only digits and English letters.
 
 
 #  Approach 1: Expand Around Center algo
+# (Note: While Manacher's Algorithm runs in pure linear O(N) time, it is highly complex and rarely expected in a live interview setup. 
+# The Expand Around Center approach strikes the perfect balance between high performance and flawless readability).
 class Solution:
     def longestPalindrome(self, s: str) -> str:
         if not s:
@@ -55,8 +57,10 @@ s = "babad"
 print(sol.longestPalindrome(s))
 # aba
 
-# Time Complexity: O(n²)
-# Space Complexity: O(1)
+# Time Complexity: O(N^2), where N is the length of the string s. There are 2N - 1 possible centers to expand from, and each expansion step can 
+# take up to O(N) comparisons in the worst case. This easily defeats a naive brute force approach O(N^3).
+# Space Complexity: O(1) auxiliary space. The algorithm tracks index pointers (start, end, left, right) natively in memory without introducing
+# dynamic arrays or strings during execution.
 
 
 # Approach 2: Manacher's Algorithm (Linear Time Solution)
