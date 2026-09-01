@@ -27,7 +27,6 @@ s consists of English letters, digits, symbols and spaces.
 
 
 # Sliding Window algo:
-
 class Solution:
     def lengthOfLongestSubstring(self, s: str) -> int:
         char_map = {}  # Stores the character and its last seen index
