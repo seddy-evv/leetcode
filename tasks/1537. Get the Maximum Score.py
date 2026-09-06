@@ -35,6 +35,8 @@
 # 1 <= nums1[i], nums2[i] <= 107
 # nums1 and nums2 are strictly increasing.
 
+
+# Two Pointers (with Greedy Choice / Dynamic Programming)
 class Solution:
     def maxSum(self, nums1: List[int], nums2: List[int]) -> int:
         MOD = 10**9 + 7
