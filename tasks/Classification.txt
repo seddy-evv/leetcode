@@ -8,3 +8,8 @@ Array:
 53. Maximum Subarray
 152. Maximum Product Subarray
 153. Find Minimum in Rotated Sorted Array
+33. Search in Rotated Sorted Array
+15. 3Sum
+11. Container With Most Water
+
+Binary:
