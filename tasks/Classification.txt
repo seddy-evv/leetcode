@@ -14,3 +14,4 @@ Array:
 
 Binary:
 371. Sum of Two Integers
+191. Number of 1 Bits
