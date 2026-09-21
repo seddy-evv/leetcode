@@ -23,3 +23,5 @@ Dynamic Programming:
 70. Climbing Stairs
 322. Coin Change
 300. Longest Increasing Subsequence
+139. Word Break
+377. Combination Sum IV
