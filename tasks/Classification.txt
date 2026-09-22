@@ -25,3 +25,5 @@ Dynamic Programming:
 300. Longest Increasing Subsequence
 139. Word Break
 377. Combination Sum IV
+198. House Robber
+213. House Robber II
