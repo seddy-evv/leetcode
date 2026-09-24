@@ -11,7 +11,7 @@ Array:
 33. Search in Rotated Sorted Array
 15. 3Sum
 11. Container With Most Water
-
+128. Longest Consecutive Sequence
 
 Binary:
 371. Sum of Two Integers
@@ -36,4 +36,7 @@ Dynamic Programming:
 
 Graph:
 133. Clone Graph
+207. Course Schedule
 417. Pacific Atlantic Water Flow
+200. Number of Islands
+
