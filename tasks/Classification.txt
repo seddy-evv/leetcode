@@ -49,3 +49,7 @@ Interval:
 56. Merge Intervals
 435. Non-overlapping Intervals
 252. Meeting Rooms 
+
+
+Linked List:
+206. Reverse Linked List
