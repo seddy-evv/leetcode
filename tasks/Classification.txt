@@ -62,3 +62,5 @@ Linked List:
 
 Matrix:
 73. Set Matrix Zeroes
+54. Spiral Matrix
+48. Rotate Image
