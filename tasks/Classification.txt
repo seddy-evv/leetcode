@@ -57,3 +57,8 @@ Linked List:
 21. Merge Two Sorted Lists
 23. Merge k Sorted Lists
 19. Remove Nth Node From End of List
+143. Reorder List
+
+
+Matrix:
+73. Set Matrix Zeroes
