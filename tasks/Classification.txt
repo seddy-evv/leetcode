@@ -72,3 +72,5 @@ String:
 424. Longest Repeating Character Replacement
 76. Minimum Window Substring
 242. Valid Anagram
+49. Group Anagrams
+20. Valid Parentheses
