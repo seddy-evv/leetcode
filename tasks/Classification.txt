@@ -65,3 +65,8 @@ Matrix:
 54. Spiral Matrix
 48. Rotate Image
 79. Word Search
+
+
+String:
+3. Longest Substring Without Repeating Characters
+424. Longest Repeating Character Replacement
