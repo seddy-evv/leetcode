@@ -74,3 +74,6 @@ String:
 242. Valid Anagram
 49. Group Anagrams
 20. Valid Parentheses
+125. Valid Palindrome
+5. Longest Palindromic Substring
+647. Palindromic Substrings
