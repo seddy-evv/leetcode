@@ -83,3 +83,4 @@ String:
 Tree:
 104. Maximum Depth of Binary Tree
 100. Same Tree
+226. Invert Binary Tree
