@@ -100,3 +100,4 @@ Tree:
 Heap:
 23. Merge k Sorted Lists
 347. Top K Frequent Elements
+295. Find Median from Data Stream
