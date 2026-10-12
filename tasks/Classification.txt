@@ -129,4 +129,7 @@ Stack:
 
 Linked List:
 21. Merge Two Sorted Lists
-
+141. Linked List Cycle
+206. Reverse Linked List
+876. Middle of the Linked List
+146. LRU Cache
