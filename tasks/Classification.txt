@@ -133,3 +133,9 @@ Linked List:
 206. Reverse Linked List
 876. Middle of the Linked List
 146. LRU Cache
+
+
+String:
+125. Valid Palindrome
+242. Valid Anagram
+409. Longest Palindrome
