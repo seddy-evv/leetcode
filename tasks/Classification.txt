@@ -139,3 +139,7 @@ String:
 125. Valid Palindrome
 242. Valid Anagram
 409. Longest Palindrome
+3. Longest Substring Without Repeating Characters
+8. String to Integer (atoi)
+5. Longest Palindromic Substring
+438. Find All Anagrams in a String
