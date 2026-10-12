@@ -123,6 +123,8 @@ Stack:
 232. Implement Queue using Stacks
 150. Evaluate Reverse Polish Notation
 155. Min Stack
+42. Trapping Rain Water
+224. Basic Calculator
 
 
 Linked List:
