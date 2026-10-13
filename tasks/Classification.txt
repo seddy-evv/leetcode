@@ -149,3 +149,4 @@ String:
 Binary Tree:
 226. Invert Binary Tree
 110. Balanced Binary Tree
+543. Diameter of Binary Tree
