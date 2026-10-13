@@ -27,11 +27,6 @@
 
 
 # Binary Search (Boundary Finding Variant).
-# The isBadVersion API is already defined for you by LeetCode.
-# @param version, an integer
-# @return a bool
-# def isBadVersion(version):
-
 class Solution:
     def firstBadVersion(self, n: int) -> int:
         low = 1
