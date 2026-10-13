@@ -143,3 +143,9 @@ String:
 8. String to Integer (atoi)
 5. Longest Palindromic Substring
 438. Find All Anagrams in a String
+76. Minimum Window Substring
+
+
+Binary Tree:
+226. Invert Binary Tree
+110. Balanced Binary Tree
