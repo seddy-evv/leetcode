@@ -150,3 +150,7 @@ Binary Tree:
 226. Invert Binary Tree
 110. Balanced Binary Tree
 543. Diameter of Binary Tree
+104. Maximum Depth of Binary Tree
+102. Binary Tree Level Order Traversal
+236. Lowest Common Ancestor of a Binary Tree
+199. Binary Tree Right Side View
