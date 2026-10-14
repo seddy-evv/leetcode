@@ -177,3 +177,20 @@ Graph:
 79. Word Search
 310. Minimum Height Trees
 127. Word Ladder
+
+
+Binary Search Tree:
+235. Lowest Common Ancestor of a Binary Search Tree
+98. Validate Binary Search Tree
+230. Kth Smallest Element in a BST
+
+
+Hash Table:
+383. Ransom Note
+
+
+Dynamic Programming:
+70. Climbing Stairs
+53. Maximum Subarray
+322. Coin Change
+416. Partition Equal Subset Sum
