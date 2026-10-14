@@ -174,4 +174,6 @@ Graph:
 200. Number of Islands
 994. Rotting Oranges
 721. Accounts Merge
-
+79. Word Search
+310. Minimum Height Trees
+127. Word Ladder
