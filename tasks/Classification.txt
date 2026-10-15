@@ -194,3 +194,8 @@ Dynamic Programming:
 53. Maximum Subarray
 322. Coin Change
 416. Partition Equal Subset Sum
+62. Unique Paths
+
+
+Binary:
+67. Add Binary
