@@ -199,3 +199,7 @@ Dynamic Programming:
 
 Binary:
 67. Add Binary
+
+
+Heap:
+973. K Closest Points to Origin
