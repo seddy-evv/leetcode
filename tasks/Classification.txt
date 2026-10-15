@@ -204,3 +204,14 @@ Binary:
 Heap:
 973. K Closest Points to Origin
 621. Task Scheduler
+295. Find Median from Data Stream
+23. Merge k Sorted Lists
+
+
+Trie:
+208. Implement Trie (Prefix Tree)
+139. Word Break
+
+
+Recursion:
+46. Permutations
