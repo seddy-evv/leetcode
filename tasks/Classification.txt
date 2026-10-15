@@ -215,3 +215,9 @@ Trie:
 
 Recursion:
 46. Permutations
+78. Subsets
+17. Letter Combinations of a Phone Number
+
+
+Matrix:
+54. Spiral Matrix
