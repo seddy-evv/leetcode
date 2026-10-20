@@ -239,4 +239,83 @@ Arrays & Hashing:
 
 
 Two pointers:
+125. Valid Palindrome
+167. Two Sum II Input Array Is Sorted
+15. 3Sum
+11. Container With Most Water
+42. Trapping Rain Water
 
+
+Stack:
+20. Valid Parentheses
+155. Min Stack
+150. Evaluate Reverse Polish Notation
+739. Daily Temperatures
+853. Car Fleet
+84. Largest Rectangle In Histogram
+
+
+Binary Search:
+704. Binary Search
+74. Search a 2D Matrix
+875. Koko Eating Bananas
+153. Find Minimum In Rotated Sorted Array
+981. Time Based Key Value Store
+4. Median of Two Sorted Arrays
+
+
+Sliding Window:
+121. Best Time to Buy And Sell Stock
+3. Longest Substring Without Repeating Characters
+424. Longest Repeating Character Replacement
+567. Permutation In String
+76. Minimum Window Substring
+239. Sliding Window Maximum
+
+
+Linked List:
+206. Reverse Linked List
+21. Merge Two Sorted Lists
+141. Linked List Cycle
+143. Reorder List
+19. Remove Nth Node From End of List
+138. Copy List With Random Pointer
+2. Add Two Numbers
+287. Find The Duplicate Number
+146. LRU Cache
+23. Merge K Sorted Lists
+25. Reverse Nodes In K Group
+
+
+Trees:
+110. Balanced Binary Tree
+102. Binary Tree Level Order Traversal
+124. Binary Tree Maximum Path Sum
+199. Binary Tree Right Side View
+105. Construct Binary Tree From Preorder And Inorder Traversal
+1448. Count Good Nodes In Binary Tree
+543. Diameter of Binary Tree
+226. Invert Binary Tree
+230. Kth Smallest Element In a Bst
+235. Lowest Common Ancestor of a Binary Search Tree
+104. Maximum Depth of Binary Tree
+100. Same Tree
+297. Serialize And Deserialize Binary Tree
+572. Subtree of Another Tree
+98. Validate Binary Search Tree
+
+
+Tries:
+208. Implement Trie Prefix Tree
+211. Design Add And Search Words Data Structure
+212. Word Search II
+
+
+Heap / Priority Queue:
+703. Kth Largest Element In a Stream
+1046. Last Stone Weight
+973. K Closest Points to Origin
+215. Kth Largest Element In An Array
+621. Task Scheduler
+355. Design Twitter
+295. Find Median From Data Stream
